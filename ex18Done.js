@@ -4,6 +4,15 @@
 
 function fibonacci(n) {
   // your code here
+  const index = n;
+  let tmp = 1;
+  let arr = [0];
+  while (0 <= n) {
+    arr.push(tmp);
+    tmp = tmp + arr[arr.length - 2];
+    n--;
+  }
+  return arr[index];
 }
 
 console.log(fibonacci(5)); // Output: 5

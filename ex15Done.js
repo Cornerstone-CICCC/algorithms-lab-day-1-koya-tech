@@ -2,6 +2,7 @@
 
 function countWords(text) {
   // your code here
+  return text.split(' ').length;
 }
 
 console.log(countWords('The quick brown fox jumps over the lazy dog')) // 9

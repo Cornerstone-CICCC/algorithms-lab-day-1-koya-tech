@@ -2,6 +2,13 @@
 
 function findById(arr, id) {
   // your code here
+  let ans = {};
+  arr.forEach((val) => {
+    if (val.id === id) {
+      ans = val;
+    }
+  });
+  return ans;
 }
 
 console.log(findById([{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }], 2)) // { id: 2, name: 'Jane' }
